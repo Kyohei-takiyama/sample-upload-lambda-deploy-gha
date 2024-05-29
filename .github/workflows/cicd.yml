@@ -9,7 +9,7 @@ on:
       - "app/**"
 
 env:
-  AWS_REGION: ap-northeast-1
+  AWS_REGION: us-west-2
   ECR_REPOSITORY: sample-lambda
   FUNCTION_NAME: sample-lambda-function
 
