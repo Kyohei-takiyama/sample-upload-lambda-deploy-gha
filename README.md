@@ -1,5 +1,7 @@
 # sample-upload-lambda-deploy-gha
 
+- Quita:https://qiita.com/Kyohei-takiyama/items/86e71e1f4f989bbfc665
+
 # Terraform
 
 - 前提条件

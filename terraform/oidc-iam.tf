@@ -1,5 +1,5 @@
 data "aws_iam_policy_document" "oidc-policy-document" {
-  # for get config lambda
+  # for all resources
   statement {
     actions = [
       # ecr:GetAuthorizationTokenは全てのresourceに対して許可する必要がある
