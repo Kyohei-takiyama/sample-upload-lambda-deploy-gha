@@ -2,6 +2,8 @@ data "aws_iam_policy_document" "oidc-policy-document" {
   # for get config lambda
   statement {
     actions = [
+      # ecr:GetAuthorizationTokenは全てのresourceに対して許可する必要がある
+      "ecr:GetAuthorizationToken",
       "lambda:GetFunctionConfiguration",
     ]
     resources = ["*"]
@@ -21,7 +23,6 @@ data "aws_iam_policy_document" "oidc-policy-document" {
   statement {
     actions = [
       "ecr:GetDownloadUrlForLayer",
-      "ecr:GetAuthorizationToken",
       "ecr:UploadLayerPart",
       "ecr:PutImage",
       "ecr:BatchGetImage",
