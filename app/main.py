@@ -3,4 +3,4 @@ import sys
 
 
 def handler(event, context):
-    return "MainへのPushを通じでデプロイされるように変更" + sys.version + "!"
+    return "Terraformへ変更" + sys.version + "!"
